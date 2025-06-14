@@ -1,3 +1,4 @@
+ console.log(alert("Welcome to this langing page"))
  function changeColor() {
     const boxs = document.querySelectorAll('.topic1');
     boxs.forEach(topic1 => {
