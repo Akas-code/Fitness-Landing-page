@@ -1,54 +1,54 @@
 //  alert("Welcome to this langing page")
- function changeColor() {
-    const boxs = document.querySelectorAll('.topic1');
-    boxs.forEach(topic1 => {
+function changeColor() {
+  const boxs = document.querySelectorAll('.topic1');
+  boxs.forEach(topic1 => {
     topic1.classList.remove('bg-indigo-300');
     topic1.classList.add('bg-red-500');
   });
 }
-function selectOption(clickedElement) {
-  const options = document.querySelectorAll('.mnth');
-   
+// function selectOption(clickedElement) {
+//   const options = document.querySelectorAll('.mnth');
 
-  options.forEach(mnth => {
-    if (mnth === clickedElement) {
 
-      // Agar clicked element already zoom-in hai to toggle to zoom-out
-      if (mnth.classList.contains('zoom-in')) {
-        mnth.classList.remove('zoom-in');
-        mnth.classList.add('zoom-out');
-                
-      } else {
-        mnth.classList.remove('zoom-out');
-        mnth.classList.add('zoom-in');
-      }
-    } else {
-      // Baaki sab se zoom-in hatao aur zoom-out lagao
-      mnth.classList.remove('zoom-in');
-      mnth.classList.add('zoom-out');
-    }
-  });
-}
-function selectOption1(clickedElement) {
-  const optionss = document.querySelectorAll('.mnthh');
+//   options.forEach(mnth => {
+//     if (mnth === clickedElement) {
 
-  optionss.forEach(mnthh => {
-    if (mnthh === clickedElement) {
-      // Agar clicked element already zoom-in hai to toggle to zoom-out
-      if (mnthh.classList.contains('zoom-in')) {
-        mnthh.classList.remove('zoom-in');
-        mnthh.classList.add('zoom-out');
-      } else {
-        mnthh.classList.remove('zoom-out');
-        mnthh.classList.add('zoom-in');
-      }
-    } else {
-      // Baaki sab se zoom-in hatao aur zoom-out lagao
-      mnthh.classList.remove('zoom-in');
-      mnthh.classList.add('zoom-out');
-    }
-  });
-}
+//       // Agar clicked element already zoom-in hai to toggle to zoom-out
+//       if (mnth.classList.contains('zoom-in')) {
+//         mnth.classList.remove('zoom-in');
+//         mnth.classList.add('zoom-out');
+
+//       } else {
+//         mnth.classList.remove('zoom-out');
+//         mnth.classList.add('zoom-in');
+//       }
+//     } else {
+//       // Baaki sab se zoom-in hatao aur zoom-out lagao
+//       mnth.classList.remove('zoom-in');
+//       mnth.classList.add('zoom-out');
+//     }
+//   });
+// }
+// function selectOption1(clickedElement) {
+//   const optionss = document.querySelectorAll('.mnthh');
+
+//   optionss.forEach(mnthh => {
+//     if (mnthh === clickedElement) {
+//       // Agar clicked element already zoom-in hai to toggle to zoom-out
+//       if (mnthh.classList.contains('zoom-in')) {
+//         mnthh.classList.remove('zoom-in');
+//         mnthh.classList.add('zoom-out');
+//       } else {
+//         mnthh.classList.remove('zoom-out');
+//         mnthh.classList.add('zoom-in');
+//       }
+//     } else {
+//       // Baaki sab se zoom-in hatao aur zoom-out lagao
+//       mnthh.classList.remove('zoom-in');
+//       mnthh.classList.add('zoom-out');
+//     }
+//   });
+// }
 
 function selectOption(clickedElement) {
   const mnths = document.querySelectorAll('.mnth');
@@ -73,9 +73,17 @@ function selectOption(clickedElement) {
   if (clickedElement.classList.contains('zoom-in')) {
     mnthhs.forEach(mnthh => {
       mnthh.classList.remove('zoom-in');
-      mnthh.classList.add('zoom-out');
+      mnthh.classList.add('zoom-outt');
     });
   }
+  if (clickedElement.classList.contains('zoom-out')) {
+      mnthhs.forEach(mnthh => {
+        // mnth.classList.remove('zoom-in');
+        mnthh.classList.remove('zoom-outt');
+        mnthh.classList.add('zoom-out');
+
+      });
+    }
 }
 
 function selectOption1(clickedElement) {
@@ -101,7 +109,16 @@ function selectOption1(clickedElement) {
   if (clickedElement.classList.contains('zoom-in')) {
     mnths.forEach(mnth => {
       mnth.classList.remove('zoom-in');
-      mnth.classList.add('zoom-out');
+      mnth.classList.add('zoom-outt');
     });
   }
+    if (clickedElement.classList.contains('zoom-out')) {
+      mnths.forEach(mnth => {
+        // mnth.classList.remove('zoom-in');
+        mnth.classList.remove('zoom-outt');
+        mnth.classList.add('zoom-out');
+
+      });
+  }
 }
+
