@@ -1,4 +1,4 @@
-//  alert("Welcome to this langing page")
+ alert("Welcome to this langing page")
 function changeColor() {
   const boxs = document.querySelectorAll('.topic1');
   boxs.forEach(topic1 => {
@@ -117,7 +117,6 @@ function selectOption1(clickedElement) {
         // mnth.classList.remove('zoom-in');
         mnth.classList.remove('zoom-outt');
         mnth.classList.add('zoom-out');
-
       });
   }
 }
