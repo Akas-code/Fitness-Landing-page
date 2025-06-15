@@ -6,49 +6,6 @@ function changeColor() {
     topic1.classList.add('bg-red-500');
   });
 }
-// function selectOption(clickedElement) {
-//   const options = document.querySelectorAll('.mnth');
-
-
-//   options.forEach(mnth => {
-//     if (mnth === clickedElement) {
-
-//       // Agar clicked element already zoom-in hai to toggle to zoom-out
-//       if (mnth.classList.contains('zoom-in')) {
-//         mnth.classList.remove('zoom-in');
-//         mnth.classList.add('zoom-out');
-
-//       } else {
-//         mnth.classList.remove('zoom-out');
-//         mnth.classList.add('zoom-in');
-//       }
-//     } else {
-//       // Baaki sab se zoom-in hatao aur zoom-out lagao
-//       mnth.classList.remove('zoom-in');
-//       mnth.classList.add('zoom-out');
-//     }
-//   });
-// }
-// function selectOption1(clickedElement) {
-//   const optionss = document.querySelectorAll('.mnthh');
-
-//   optionss.forEach(mnthh => {
-//     if (mnthh === clickedElement) {
-//       // Agar clicked element already zoom-in hai to toggle to zoom-out
-//       if (mnthh.classList.contains('zoom-in')) {
-//         mnthh.classList.remove('zoom-in');
-//         mnthh.classList.add('zoom-out');
-//       } else {
-//         mnthh.classList.remove('zoom-out');
-//         mnthh.classList.add('zoom-in');
-//       }
-//     } else {
-//       // Baaki sab se zoom-in hatao aur zoom-out lagao
-//       mnthh.classList.remove('zoom-in');
-//       mnthh.classList.add('zoom-out');
-//     }
-//   });
-// }
 
 function selectOption(clickedElement) {
   const mnths = document.querySelectorAll('.mnth');
