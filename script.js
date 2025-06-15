@@ -1,4 +1,4 @@
- alert("Welcome to this langing page")
+alert("Welcome to this landing page")
 function changeColor() {
   const boxs = document.querySelectorAll('.topic1');
   boxs.forEach(topic1 => {
